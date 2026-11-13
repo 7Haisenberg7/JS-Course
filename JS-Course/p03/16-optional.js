@@ -13,5 +13,5 @@ console.log(draft.customer?.contacts?.email ?? 'Почта не указана')
     shop.log?.('Заказ создан');
     silentShop.log?.('Не выведется');
     const reviews = null;
-    console.log('Первый отзыв:', reviews?.[0]?.author)
+    console.log('Первый отзыв:', reviews?.[0])
 
