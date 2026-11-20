@@ -1,0 +1,27 @@
+    const tags = ['usb', 'rgb'];
+    const it = tags[Symbol.iterator]();
+    console.log(it.next());
+    console.log(it.next());
+    console.log(it.next());
+    
+    const cart = {
+        items: [
+            {name : 'Мышь', price: 790, qty:2},
+            {name : 'Коврик', price: 350 , qty:1}
+        ],
+        [Symbol.iterator](){
+            let index = 0;
+            const items = this.items;
+            return {
+                next() {
+                    if (index < items.length) {
+                        const item = items[index++];
+                        return {value : `$P{item.name} x${item.qty} = ${item.price * item.qty}`, done : false};
+                    }
+                    return {value: undefined, done:true};
+                },
+            };
+        },
+    };
+    for(const live of cart) console.log(cart);
+    console.log([cart]);
