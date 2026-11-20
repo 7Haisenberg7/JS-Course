@@ -17,11 +17,11 @@
     function escapeRegExp(text){
         return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
-function highlight(text, query) {
+    function highlight(text, query) {
     if (!query) return text;
     const re = new RegExp(escapeRegExp(query), 'gi');
     return text.replace(re, (found) => `<mark>${found}</mark>`);
 }
-console.log(highlight('Мышь и коврик для мыши', 'мыш'));
-console.log(highlight('Цена 1.5 тыс. и 105 руб.', '1.5'));
+    console.log(highlight('Мышь и коврик для мыши', 'мыш'));
+    console.log(highlight('Цена 1.5 тыс. и 105 руб.', '1.5'));
     
