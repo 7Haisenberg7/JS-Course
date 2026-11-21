@@ -1,11 +1,11 @@
-console.log(typeof 42);              // число
-console.log(typeof 'Клавиатура');    // строка
-console.log(typeof true);            // логический
-console.log(typeof undefined);       // не задано
-console.log(typeof null);            // пусто
-console.log(typeof 12345678901234567890n); // большое целое
-console.log(typeof Symbol('id'));    // символ
-console.log(typeof { name: 'Мышь' }); // объект
+console.log(typeof 42);              
+console.log(typeof 'Клавиатура');    
+console.log(typeof true);            
+console.log(typeof undefined);       
+console.log(typeof null);         
+console.log(typeof 12345678901234567890n); 
+console.log(typeof Symbol('id'));   
+console.log(typeof { name: 'Мышь' });
 
 
 
